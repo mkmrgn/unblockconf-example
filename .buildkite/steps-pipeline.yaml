@@ -1,0 +1,9 @@
+steps:
+  - block: ":warning: Block step"
+  - input: "What's your name?"
+    fields:
+      - text: "Your name"
+        key: "name"
+  - command: ".buildkite/group.sh | buildkite-agent pipeline upload"
+  
+    
