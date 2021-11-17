@@ -15,6 +15,7 @@ steps:
             value: "3"
           - label: "4"
             value: "4"
+  - wait
   - command: ".buildkite/group.sh | buildkite-agent pipeline upload"
   
     
